@@ -1,0 +1,92 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comic+Neue&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #fcd6e2; /* rosa pastel */
+  color: #2c3e50; /* azul marino */
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Encabezado */
+.header {
+  background-color: #fff;
+  border-bottom: 2px dashed #d81b60;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #d81b60;
+  font-family: 'Comic Neue', cursive;
+}
+
+/* Productos */
+.product-card {
+  background-color: #fff;
+  border: 2px dashed #fcd6e2;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(220, 144, 180, 0.2);
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(216, 27, 96, 0.25); /* magenta */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #fcd6e2;
+}
+
+/* Botones */
+.btn {
+  background-color: #d81b60;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: #2c3e50;
+  font-size: 1rem;
+  border-top: 2px dashed #fcd6e2;
+  font-family: 'Comic Neue', cursive;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+}
