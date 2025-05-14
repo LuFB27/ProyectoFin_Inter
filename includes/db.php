@@ -7,9 +7,7 @@ $host = "localhost";
 
 $user = "root";
  
-
-$pass = ""; // si no cambiaste la contraseña de root en Laragon
- 
+$pass = "root";
 
 $db = "tienda_peluches";
  
@@ -17,7 +15,7 @@ $db = "tienda_peluches";
 
  
 
-// Crear conexión
+// crear conexion
  
 
 $conn = mysqli_connect($host, $user, $pass, $db);
